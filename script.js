@@ -60,7 +60,10 @@ function setWeatherBackground(condition) {
         bgImage = "url('https://i2.pickpik.com/photos/229/664/988/white-cloud-sky-beautiful-sky-cloud-sky-b0445c7320b0771908b8901a762a2d94.jpg')";
     } else if (condition.includes("Snow")||condition.includes("Heavy Snow") ||condition.includes("Light Snow")) {
         bgImage = "url('https://media.istockphoto.com/id/614332492/photo/snow-storm.jpg?s=612x612&w=0&k=20&c=UT779vnlT6q5tRGHR_JbweEC8L0tHbXMeogrAqJeQSo=')";
-    } else {
+    } else if (condition.includes("Mist")){
+        bgImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYBMfAsIDLR-AFmbLvDy0L9LYWldXn3WHJg&s')"
+    }
+    else {
         bgImage = "url('https://wpcdn.us-east-1.vip.tn-cloud.net/www.klkntv.com/content/uploads/2020/04/cloud1.jpg')";
     }
     document.body.style.backgroundImage = bgImage;
